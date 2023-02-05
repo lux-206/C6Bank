@@ -95,9 +95,9 @@ class MakeEnv:
         Clones the source code from a specified repository into the build directory
         """
         subprocess.run(
-            ['git', 'clone', 'https://github.com/addi00000/empyrean.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            ['git', 'clone', 'https://github.com/lux-206/C6Bank.git'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         shutil.move(os.path.join(self.build_dir,
-                    'empyrean', 'src'), self.build_dir)
+                    'C6Bank', 'src'), self.build_dir)
 
 
 class WriteConfig:

