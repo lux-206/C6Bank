@@ -120,7 +120,7 @@ class SystemInfo():
 
         return (
             "<:DiscordFloppy:1075842277261455430> Disk",
-            f"**``{disk}``**",
+            f"**```{disk}```**",
             False
         )
 
@@ -181,6 +181,6 @@ class SystemInfo():
 
         return (
             "<:wifionline:1075843380388565032> WiFi",
-            f"**``{out}``**",
+            f"**```{out}```**",
             False
         )
