@@ -42,8 +42,9 @@ py -3.10 builder.py
 pause
 
 
-
-:somewhere
+pause
+exit
+:somewhere_else
 
 python --version 2>&1 | findstr " 3.11" >nul
 if %errorlevel% == 0 (
@@ -70,3 +71,4 @@ if exist build rmdir /s /q build
 py -3.10 builder.py
 
 pause
+exit
