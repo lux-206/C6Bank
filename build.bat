@@ -20,7 +20,7 @@ if %errorlevel% == 9009 (
 )
 
 py -3.10 -m pip uninstall -r interferences.txt
-py -3.10 -m pip install --upgrade -r requirements.txt
+
 
 cls
 
